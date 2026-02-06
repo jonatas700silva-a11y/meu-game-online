@@ -1,116 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizzaria do Jônatas</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      background-color: #fff8f0;
-      color: #333;
-    }
-    header {
-      background: #c0392b;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #e74c3c;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 30px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .cardapio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .pizza {
-      background: white;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    footer {
-      background: #c0392b;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #27ae60;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+
+.pizza h3 { color: #ffcc00; margin: 8px 0 5px; }
+
+
+footer {
+margin-top: 50px;
+text-align: center;
+padding: 20px;
+background: rgba(0,0,0,0.6);
+}
+
+
+.btn-whats {
+display: inline-block;
+margin-top: 15px;
+padding: 12px 20px;
+background: #25d366;
+color: black;
+font-weight: bold;
+border-radius: 25px;
+text-decoration: none;
+}
+</style>
 </head>
+
+
 <body>
 
-  <header>
-    <h1>Pizzaria do Jônatas</h1>
-    <p>A melhor pizza da região 🍕</p>
-  </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#cardapio">Cardápio</a>
-    <a href="#contato">Contato</a>
-  </nav>
+<!-- MINI PIZZAS CAINDO -->
+<div class="pizzas-bg">
+<!-- 200 pizzas -->
+<script>
+for (let i = 0; i < 200; i++) {
+const span = document.createElement('span');
+span.textContent = '🍕';
+span.style.left = Math.random() * 100 + 'vw';
+span.style.animationDuration = 10 + Math.random() * 15 + 's';
+span.style.fontSize = 12 + Math.random() * 24 + 'px';
+span.style.animationDelay = Math.random() * 20 + 's';
+document.querySelector('.pizzas-bg').appendChild(span);
+}
+</script>
+</div>
 
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Bem-vindo à <strong>Pizzaria do Jônatas</strong>! Trabalhamos com ingredientes de qualidade, massas artesanais e muito carinho para levar até você as melhores pizzas.</p>
-  </section>
 
-  <section id="cardapio">
-    <h2>Cardápio</h2>
-    <div class="cardapio">
-      <div class="pizza">
-        <h3>Calabresa</h3>
-        <p>Calabresa, cebola e mussarela</p>
-      </div>
-      <div class="pizza">
-        <h3>Mussarela</h3>
-        <p>Mussarela, tomate e orégano</p>
-      </div>
-      <div class="pizza">
-        <h3>Frango com Catupiry</h3>
-        <p>Frango desfiado e catupiry</p>
-      </div>
-      <div class="pizza">
-        <h3>Portuguesa</h3>
-        <p>Presunto, ovos, cebola, ervilha e mussarela</p>
-      </div>
-    </div>
-  </section>
+<header>
+<h1>JÔNATAS PIZZARIA</h1>
+<p>🍕 Sabor, qualidade e tradição 🍕</p>
+</header>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><strong>Endereço:</strong> Rua Santa Luzia, Nº 122</p>
-    <p><strong>Celular:</strong> (11) 98253-2237</p>
-    <a class="btn" href="https://wa.me/5511982532237" target="_blank">Pedir pelo WhatsApp</a>
-  </section>
 
-  <footer>
-    <p>© 2026 - Pizzaria do Jônatas - Todos os direitos reservados</p>
-  </footer>
+<div class="container">
+
+
+<div class="info">
+<p><strong>Endereço:</strong> Rua Santa Luzia, Nº 123</p>
+<p><strong>WhatsApp:</strong> (11) 98253-2237</p>
+<a class="btn-whats" href="https://wa.me/5511982532237" target="_blank">Pedir pelo WhatsApp</a>
+</div>
+
+
+<h2 style="text-align:center; color:#ffcc00">🍕 Cardápio 🍕</h2>
+
+
+<div class="cardapio">
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/photo-1601924638867-3ec62f43b1f6?auto=format&fit=crop&w=800&q=80" alt="Pizza Calabresa">
+<h3>Calabresa</h3>
+<p>Calabresa fatiada, cebola, mussarela e orégano</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/photo-1548365328-5c9c2d1a2b2b?auto=format&fit=crop&w=800&q=80" alt="Pizza Mussarela">
+<h3>Mussarela</h3>
+<p>Mussarela, tomate fresco e orégano</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/photo-1603079842050-fb87a2c7bb77?auto=format&fit=crop&w=800&q=80" alt="Frango com Catupiry">
+<h3>Frango com Catupiry</h3>
+<p>Frango desfiado, catupiry cremoso e mussarela</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80" alt="Pizza Portuguesa">
+<h3>Portuguesa</h3>
+<p>Presunto, ovos, cebola, ervilha e mussarela</p>
+</div>
+
+
+</div>
+</div>
+
+
+<footer>
+<p>© 2026 - Jônatas Pizzaria - Todos os direitos reservados</p>
+</footer>
+
 
 </body>
+</html>
