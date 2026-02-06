@@ -1,174 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jônatas Pizzas</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f8f8f8;
-        }
-
-        header {
-            background: #b71c1c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        header p {
-            margin-top: 5px;
-            font-size: 18px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            color: #b71c1c;
-            margin-bottom: 20px;
-        }
-
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-        }
-
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card .info {
-            padding: 15px;
-        }
-
-        .card h3 {
-            margin: 0 0 10px;
-            color: #333;
-        }
-
-        .card p {
-            color: #555;
-            font-size: 14px;
-        }
-
-        .contato {
-            background: #fff;
-            margin-top: 40px;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .contato a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 12px 25px;
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+background: #c0392b;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 50px;
+}
+</style>
 </head>
+
+
 <body>
 
+
 <header>
-    <h1>🍕 Jônatas Pizzas</h1>
-    <p>As melhores pizzas da cidade!</p>
+<h1>JÔNATAS PIZZARIA</h1>
+<p>🍕 Tradição, sabor e qualidade 🍕</p>
 </header>
+
 
 <div class="container">
 
-    <h2>Cardápio</h2>
 
-    <div class="menu">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1601924582975-7d26d7d5f9d5" alt="Pizza Calabresa">
-            <div class="info">
-                <h3>Calabresa</h3>
-                <p>Calabresa fatiada, cebola, queijo mussarela e orégano.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1548365328-9f5475f17c8a" alt="Pizza Mussarela">
-            <div class="info">
-                <h3>Mussarela</h3>
-                <p>Queijo mussarela derretido, molho especial e orégano.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e" alt="Pizza Frango com Catupiry">
-            <div class="info">
-                <h3>Frango com Catupiry</h3>
-                <p>Frango desfiado temperado, catupiry cremoso e queijo.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be45" alt="Pizza Portuguesa">
-            <div class="info">
-                <h3>Portuguesa</h3>
-                <p>Presunto, ovos, cebola, pimentão, azeitona e queijo.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="contato">
-        <h2>Faça seu pedido agora!</h2>
-        <p><strong>WhatsApp:</strong> (11) 98253-2237</p>
-        <p><strong>Endereço:</strong> Rua Santa Luzia Nº 123</p>
-
-        <a href="https://wa.me/5511982532237" target="_blank">
-            Pedir pelo WhatsApp
-        </a>
-    </div>
-
+<div class="info">
+<p><strong>📍 Endereço:</strong> Rua Santa Luzia, Nº 123</p>
+<p><strong>📱 WhatsApp:</strong> (11) 98253-2237</p>
+<a class="btn-whats" href="https://wa.me/5511982532237" target="_blank">Pedir pelo WhatsApp</a>
 </div>
 
+
+<h2>🍕 Nosso Cardápio 🍕</h2>
+
+
+<div class="cardapio">
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1601924638867-3ec62f43b1f6?auto=format&fit=crop&w=800&q=80" alt="Pizza Calabresa">
+<h3>Calabresa</h3>
+<p>Calabresa fatiada, cebola, mussarela e orégano</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1548365328-5c9c2d1a2b2b?auto=format&fit=crop&w=800&q=80" alt="Pizza Mussarela">
+<h3>Mussarela</h3>
+<p>Mussarela, tomate fresco e orégano</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1603079842050-fb87a2c7bb77?auto=format&fit=crop&w=800&q=80" alt="Frango com Catupiry">
+<h3>Frango com Catupiry</h3>
+<p>Frango desfiado, catupiry cremoso e mussarela</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80" alt="Pizza Portuguesa">
+<h3>Portuguesa</h3>
+<p>Presunto, ovos, cebola, ervilha e mussarela</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=800&q=80" alt="Pizza Quatro Queijos">
+<h3>Quatro Queijos</h3>
+<p>Mussarela, provolone, parmesão e catupiry</p>
+</div>
+
+
+<div class="pizza">
+<img src="https://images.unsplash.com/id-1590947132387-155cc02f3212?auto=format&fit=crop&w=800&q=80" alt="Pizza Chocolate">
+<h3>Chocolate</h3>
+<p>Chocolate ao leite com granulado</p>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 <footer>
-    <p>© 2026 - Jônatas Pizzas | Todos os direitos reservados</p>
+<p>© 2026 - Jônatas Pizzaria | Todos os direitos reservados</p>
 </footer>
+
 
 </body>
 </html>
