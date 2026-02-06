@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzaria do Jônatas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: #c0392b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #e74c3c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cardapio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .pizza {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    footer {
+      background: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pizzaria do Jônatas</h1>
+    <p>A melhor pizza da região 🍕</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Bem-vindo à <strong>Pizzaria do Jônatas</strong>! Trabalhamos com ingredientes de qualidade, massas artesanais e muito carinho para levar até você as melhores pizzas.</p>
+  </section>
+
+  <section id="cardapio">
+    <h2>Cardápio</h2>
+    <div class="cardapio">
+      <div class="pizza">
+        <h3>Calabresa</h3>
+        <p>Calabresa, cebola e mussarela</p>
+      </div>
+      <div class="pizza">
+        <h3>Mussarela</h3>
+        <p>Mussarela, tomate e orégano</p>
+      </div>
+      <div class="pizza">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado e catupiry</p>
+      </div>
+      <div class="pizza">
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovos, cebola, ervilha e mussarela</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Endereço:</strong> Rua Santa Luzia, Nº 122</p>
+    <p><strong>Celular:</strong> (11) 98253-2237</p>
+    <a class="btn" href="https://wa.me/5511982532237" target="_blank">Pedir pelo WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2026 - Pizzaria do Jônatas - Todos os direitos reservados</p>
+  </footer>
+
+</body>
